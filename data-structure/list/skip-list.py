@@ -24,7 +24,7 @@ class SkipList:
 
     # 各ノード
     # node = [value, n_node0, ..., n_nodek, s_level]
-    # n_nodei = ランクiの次のノード
+    # n_nodei = レベルiの次のノード
     # 次のノードが終端の時は n_nodei = None
 
     # addition: O(logN)
@@ -124,8 +124,8 @@ class IndexableSkipList:
 
     # 各ノード
     # node = [value, [n_node0, wid0], ..., [n_nodek, widk], s_level]
-    # n_nodei = ランクiの次のノード
-    # widi    = ランクiの次のノードまでの幅
+    # n_nodei = レベルiの次のノード
+    # widi    = レベルiの次のノードまでの幅
     # 次のノードが終端の時は [n_nodei, widi] = None
 
     # addition: O(logN)
